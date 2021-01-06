@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CONBook.Data.Core\CONBook.Data.Core.csproj" />
+    <ProjectReference Include="..\CONBook.Domain.Core\CONBook.Domain.Core.csproj" />
+    <ProjectReference Include="..\CONBook.Domain\CONBook.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

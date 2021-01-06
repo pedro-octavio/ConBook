@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.1.0" />
+    <PackageReference Include="AutoMapper.Contrib.Autofac.DependencyInjection" Version="5.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CONBook.Application.Core\CONBook.Application.Core.csproj" />
+    <ProjectReference Include="..\CONBook.Application.Services\CONBook.Application.Services.csproj" />
+    <ProjectReference Include="..\CONBook.Application\CONBook.Application.csproj" />
+    <ProjectReference Include="..\CONBook.Data.Core\CONBook.Data.Core.csproj" />
+    <ProjectReference Include="..\CONBook.Data.Services\CONBook.Data.Services.csproj" />
+    <ProjectReference Include="..\CONBook.Domain.Core\CONBook.Domain.Core.csproj" />
+    <ProjectReference Include="..\CONBook.Domain.Services\CONBook.Domain.Services.csproj" />
+  </ItemGroup>
+
+</Project>
