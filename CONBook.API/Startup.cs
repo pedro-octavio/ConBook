@@ -1,4 +1,5 @@
 using Autofac;
+using CONBook.API.Middlewares;
 using CONBook.Data;
 using CONBook.IOC;
 using Microsoft.AspNetCore.Builder;
@@ -76,6 +77,8 @@ namespace CONBook.API
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseMiddleware<GlobalExceptionHandlerMiddleware>();
 
             app.UseEndpoints(endpoints =>
             {
